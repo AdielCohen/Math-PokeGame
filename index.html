@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שחק במשחק חשבון</title>
+  </head>
+  <body dir="rtl">
+    <!-- question: -->
+    <input type="text" class="question" disabled />
+    <!-- input: -->
+    <div class="input-container">
+      <label for="num"> הזן את התשובה שלך:</label>
+      <input type="number" id="num" value="0" />
+      <button type="button" id="btn" onclick="res()">חשב</button>
+    </div>
+    <!-- level: -->
+    <div id="post"></div>
+    <img id="poke" src="egg.png" alt="funny image" />
+    <br>
+    <br>
+    <div style="text-align: center;">
+      <pre>בחר אקראיות:</pre>
+    <br> 
+    <form>
+      <input type="radio" id="n1" name="chooseN">
+      <label>1</label>
+      <input type="radio" id="n2" name="chooseN">
+      <label>2</label>
+      <input type="radio" id="n3" name="chooseN">
+      <label>3</label>
+      <input type="radio" id="n4" name="chooseN">
+      <label>4</label>
+      <input type="radio" id="n5" name="chooseN">
+      <label>5</label>
+      <input type="radio" id="n6" name="chooseN">
+      <label>6</label>
+      <input type="radio" id="n7" name="chooseN">
+      <label>7</label>
+      <input type="radio" id="n8" name="chooseN">
+      <label>8</label>
+      <input type="radio" id="n9" name="chooseN">
+      <label>9</label>
+      <input type="radio" id="n10" name="chooseN">
+      <label>10</label>
+    </form>
+    </div>
+  </body>
+  <footer><script src="script.js"></script></footer>
+</html>
