@@ -4,6 +4,7 @@ var i2 = 10;
 var m1 = 1;
 var m2 = 1;
 
+
 document.querySelector("#post").innerHTML = " רמה " + c;
 let x = Math.floor(Math.random() * i1) + m1;
 let y = Math.floor(Math.random() * i2) + m2;
