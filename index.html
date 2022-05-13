@@ -53,16 +53,42 @@
       <label>10</label>
     </form>
     </div>
-  <script>
-  var x = new Boolean(true);
-  const myTimeout = setTimeout(fullScreen(x), 1000);
-    
-  function fullScreen(x) {
-    if(x) {
-      document.body.requestFullscreen();
-    }
+<button id="goFS">Go fullscreen</button>
+<script>
+  var goFS = document.getElementById('goFS');
+  goFS.addEventListener(
+    'click',
+    function () {
+function toggleFullScreen() {
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen =
+    docEl.requestFullscreen ||
+    docEl.mozRequestFullScreen ||
+    docEl.webkitRequestFullScreen ||
+    docEl.msRequestFullscreen;
+  var cancelFullScreen =
+    doc.exitFullscreen ||
+    doc.mozCancelFullScreen ||
+    doc.webkitExitFullscreen ||
+    doc.msExitFullscreen;
+
+  if (
+    !doc.fullscreenElement &&
+    !doc.mozFullScreenElement &&
+    !doc.webkitFullscreenElement &&
+    !doc.msFullscreenElement
+  ) {
+    requestFullScreen.call(docEl);
+  } else {
+    cancelFullScreen.call(doc);
   }
-  </script>
+}
+    },
+    false,
+  );
+</script>
   </body>
   <footer><script src="script.js"></script></footer>
 </html>
