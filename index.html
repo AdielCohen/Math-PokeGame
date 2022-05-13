@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>שחק במשחק חשבון</title>
   </head>
-  <body dir="rtl" onload="fullScreen()">
+  <body onload="fullScreen()" dir="rtl">
     <!-- question: -->
     <input type="text" class="question" disabled />
     <!-- input: -->
@@ -53,12 +53,10 @@
       <label>10</label>
     </form>
     </div>
-    
-        <button id="goFS">Go fullscreen</button>
   <script>
-    function fullScreen() {
-          document.body.requestFullscreen();
-    }
+  function fullScreen() {
+    document.body.requestFullscreen();
+  }
   </script>
   </body>
   <footer><script src="script.js"></script></footer>
