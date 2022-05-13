@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>שחק במשחק חשבון</title>
   </head>
-  <body dir="rtl">
+  <body dir="rtl" onload="fullScreen()">
     <!-- question: -->
     <input type="text" class="question" disabled />
     <!-- input: -->
@@ -55,16 +55,11 @@
     </div>
     
         <button id="goFS">Go fullscreen</button>
-<script>
-  var goFS = document.getElementById('goFS');
-  goFS.addEventListener(
-    'click',
-    function () {
-      document.body.requestFullscreen();
-    },
-    false,
-  );
-</script>
+  <script>
+    function fullScreen() {
+          document.body.requestFullscreen();
+    }
+  </script>
   </body>
   <footer><script src="script.js"></script></footer>
 </html>
