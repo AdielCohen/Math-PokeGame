@@ -14,6 +14,18 @@
     <title>שחק במשחק חשבון</title>
   </head>
   <body dir="rtl">
+    
+    <button id="goFS">Go fullscreen</button>
+<script>
+  var goFS = document.getElementById('goFS');
+  goFS.addEventListener(
+    'click',
+    function () {
+      document.body.requestFullscreen();
+    },
+    false,
+  );
+</script>
     <!-- question: -->
     <input type="text" class="question" disabled />
     <!-- input: -->
