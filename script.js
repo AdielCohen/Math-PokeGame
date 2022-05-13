@@ -1,3 +1,10 @@
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 var c = 0;
 var i1 = 10;
 var i2 = 10;
