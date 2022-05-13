@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>שחק במשחק חשבון</title>
   </head>
-  <body onload="fullScreen()" dir="rtl">
+  <body dir="rtl">
     <!-- question: -->
     <input type="text" class="question" disabled />
     <!-- input: -->
@@ -54,6 +54,8 @@
     </form>
     </div>
   <script>
+  const myTimeout = setTimeout(fullScreen, 2000);
+    
   function fullScreen() {
     document.body.requestFullscreen();
   }
