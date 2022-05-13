@@ -54,10 +54,13 @@
     </form>
     </div>
   <script>
-  const myTimeout = setTimeout(fullScreen, 2000);
+  boolean x = true;
+  const myTimeout = setTimeout(fullScreen(x), 2000);
     
-  function fullScreen() {
-    document.body.requestFullscreen();
+  function fullScreen(x) {
+    if(x) {
+      document.body.requestFullscreen();
+    }
   }
   </script>
   </body>
