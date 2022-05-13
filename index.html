@@ -54,17 +54,22 @@
     </form>
     </div>
 
+<button id="goFS">Go fullscreen</button>
 <script>
-addEventListener("click", function() {
-    var
-          el = document.documentElement
-        , rfs =
-               el.requestFullScreen
-            || el.webkitRequestFullScreen
-            || el.mozRequestFullScreen
-    ;
-    rfs.call(el);
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
 });
+  
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      
+   const elem = document.documentElement;
+   if (elem.requestFullscreen) {elem.requestFullscreen()}
+   
+  }, false);
 </script>
   </body>
   <footer><script src="script.js"></script></footer>
